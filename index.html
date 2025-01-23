@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Tab</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="container">
         <div class="card_1">
             <div class="image">
-                <p>当たる も 八卦 当たらぬ も 八卦</p>
+                <!-- ...existing code... -->
+                <p id="greeting">当たる も 八卦 当たらぬ も 八卦</p>
+                <!-- ...existing code... -->
                 <div class="img"></div>
             </div>
-            
+
         </div>
         <div class="card_2">
             <div id="txt"></div>
             <div class="secondsContainer">
-                <div id="seconds"></div> 
+                <div id="seconds"></div>
             </div>
         </div>
         <div class="card_3">
-            <form action="https://www.google.com/search?q=a">
+            <form action="https://www.google.com/search?q=a" method="get">
                 <div class="search">
                     <input type="search" name="q" aria-label="Search" placeholder="Search on Google">
                     <i class="fa-solid fa-magnifying-glass iconSearch"></i>
@@ -42,10 +48,6 @@
                 <p>Spotify</p>
                 <i class="fa-brands fa-spotify icon"></i>
             </a>
-            <a class="link" href="https://www.reddit.com/">
-                <p>Reddit</p>
-                <i class="fa-brands fa-reddit-alien icon"></i>
-            </a>
             <a class="link" href="https://www.linkedin.com/">
                 <p>LinkedIn</p>
                 <i class="fa-brands fa-linkedin-in icon"></i>
@@ -54,8 +56,18 @@
                 <p>Github</p>
                 <i class="fa-brands fa-github-alt icon"></i>
             </a>
+            <a class="link" href="http://localhost:30000">
+                <p>Foundry</p>
+                <i class="fa-solid fa-dice-d20 icon"></i>
+            </a>
+            <a class="link" href="https://5e.tools">
+                <p>5eTools</p>
+                <i class="fab fa-d-and-d icon"></i>
+            </a>
+    
         </div>
     </div>
     <script src="scripts/script.js"></script>
 </body>
+
 </html>
