@@ -16,9 +16,12 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    background-image: url("../assets/background.jpg");
+    background-image: url("../assets/b-901.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 2rem;
 }
 
 .container {
@@ -28,10 +31,11 @@ body {
     padding: 2rem;
     gap: 2rem;
     grid-template:
-		"card_1 card_2" 1fr
-		"card_3 card_3" 1fr
-		"card_4 card_4" 1fr
-		/ 1fr 1fr;
+        "card_1 card_2" 1fr
+        "card_3 card_3" 1fr
+        "card_4 card_4" 1fr
+        / 1fr 1fr;
+
 }
 
 .card_1 {
@@ -44,8 +48,9 @@ body {
     height: 100%;
     display: flex;
     gap: 1rem;
+
     p {
-        width:50%;
+        width: 50%;
         font-size: 2rem;
         font-weight: 800;
         color: #f2e9e4;
@@ -55,7 +60,7 @@ body {
 .img {
     height: 100%;
     width: 50%;
-    background-image: url("../assets/vagabond.jpg");
+    background-image: url("../assets/arch-chan_to.png");
     background-size: cover;
     background-position: center;
     border-radius: 1rem;
@@ -87,7 +92,7 @@ body {
     position: absolute;
     display: flex;
     bottom: -20px;
-    right:-20px;
+    right: -20px;
     background-color: #f2e9e4;
     width: 50px;
     height: 50px;
@@ -142,6 +147,7 @@ input {
     gap: 2rem;
 }
 
+
 .link {
     width: 10rem;
     height: 10rem;
@@ -159,47 +165,143 @@ input {
 .link:nth-child(1):hover {
     box-shadow: 0rem 0rem 4rem #CD201F;
     transition: all ease-in-out 0.2s;
+
     .icon {
         color: #CD201F;
         transition: all ease-in-out 0.5s;
+        animation: colorChangeYoutube 1s infinite alternate;
     }
 }
 
 .link:nth-child(2):hover {
     box-shadow: 0rem 0rem 4rem #1DB954;
     transition: all ease-in-out 0.2s;
+
     .icon {
         color: #1DB954;
         transition: all ease-in-out 0.5s;
+        animation: colorChangeSpotify 1s infinite alternate;
     }
 }
- 
+
+
 .link:nth-child(3):hover {
-    box-shadow: 0rem 0rem 4rem #FF5700;
+    box-shadow: 0rem 0rem 4rem #0e76a8;
     transition: all ease-in-out 0.2s;
+
     .icon {
-        color: #FF5700;
+        color: #0e76a8;
         transition: all ease-in-out 0.5s;
+        animation: colorChangeLinkedIn 1s infinite alternate;
     }
 }
 
 .link:nth-child(4):hover {
-    box-shadow: 0rem 0rem 4rem #0e76a8 ;
+    box-shadow: 0rem 0rem 4rem #f2e9e4;
     transition: all ease-in-out 0.2s;
+
     .icon {
-        color: #0e76a8 ;
+        color: #24292e;
         transition: all ease-in-out 0.5s;
+        animation: colorChangeGithub 1s infinite alternate;
     }
 }
 
 .link:nth-child(5):hover {
-    box-shadow: 0rem 0rem 4rem #f2e9e4 ;
+    box-shadow: 0rem 0rem 4rem #FF5700;
     transition: all ease-in-out 0.2s;
+
     .icon {
-        color: #24292e ;
+        color: #FF5700;
         transition: all ease-in-out 0.5s;
+        animation: colorChangeFoundry 1s infinite alternate;
     }
 }
+
+.link:nth-child(6):hover {
+    box-shadow: 0rem 0rem 4rem #0e76a8;
+    transition: all ease-in-out 0.2s, box-shadow 2s infinite alternate;
+    animation: boxShadowChange5e 2s infinite alternate;
+
+    .icon {
+        color: #CD201F;
+        transition: all ease-in-out 0.5s;
+        animation: colorChange5e 2s infinite alternate;
+    }
+}
+
+@keyframes boxShadowChange5e {
+    0% {
+        box-shadow: 0rem 0rem 4rem #0e76a8;
+    }
+
+    100% {
+        box-shadow: 0rem 0rem 4rem #CD201F;
+    }
+
+}
+
+@keyframes colorChangeFoundry {
+    from {
+        color: #FF5700;
+    }
+
+    to {
+        color: #f2e9e4;
+    }
+}
+
+@keyframes colorChangeGithub {
+    from {
+        color: #4a4e69;
+    }
+
+    to {
+        color: #f2e9e4;
+    }
+}
+
+@keyframes colorChangeSpotify {
+    from {
+        color: #1DB954;
+    }
+
+    to {
+        color: #f2e9e4;
+    }
+}
+
+@keyframes colorChangeYoutube {
+    from {
+        color: #CD201F;
+    }
+
+    to {
+        color: #f2e9e4;
+    }
+}
+
+@keyframes colorChangeLinkedIn {
+    from {
+        color: #0e76a8;
+    }
+
+    to {
+        color: #f2e9e4;
+    }
+}
+
+@keyframes colorChange5e {
+    0% {
+        color: #0e76a8;
+    }
+    100% {
+        color: #CD201F;
+    }
+    
+}
+
+
 
 .icon {
     font-size: 40px;
